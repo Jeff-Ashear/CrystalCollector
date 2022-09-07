@@ -31,6 +31,8 @@ function boardSetup() {
     bSkullNum = arr[1]
     cSkullNum = arr[2]
     dSkullNum = arr[3]
+
+    console.log(arr)
 }
 
 $(document).ready(boardSetup())
@@ -52,7 +54,8 @@ function checkConditions() {
     }
 }
 
-$("#aSkull").click(clicker(arr[0]))
+// this .click is firing without the click. I think I need a different method.
+$("#aSkull").click(console.log("clicked"))
 
 
 function clicker(n) {
