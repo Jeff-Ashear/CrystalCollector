@@ -55,7 +55,9 @@ function checkConditions() {
 }
 
 // this .click is firing without the click. I think I need a different method.
-$("#aSkull").click(console.log("clicked"))
+$("#aSkull").click(function() {
+    clicker(arr[0])
+})
 
 
 function clicker(n) {
