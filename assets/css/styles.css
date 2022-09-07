@@ -1,0 +1,10 @@
+#scoreboard, #interface {
+    border: solid black 4px;
+    border-radius: 10px;
+    margin: 5%;
+}
+
+/* .skull {
+    max-width: 20vw;
+    height: auto;
+} */
