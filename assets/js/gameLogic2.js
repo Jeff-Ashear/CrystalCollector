@@ -17,6 +17,14 @@ function boardSetup() {
             arr.push(rndm)
         }
     }
+
+    $('.card').attr('class', 'card col-6 col-12-sm')
+    $('.card-title').html('')
+    $('#skull1').attr('src', './assets/images/skull1.jfif')
+    $('#skull2').attr('src', './assets/images/skull2.jfif')
+    $('#skull3').attr('src', './assets/images/skull3.jfif')
+    $('#skull4').attr('src', './assets/images/skull4.jfif')
+
     console.log(arr)
 }
 
@@ -41,6 +49,10 @@ var result = ""
 
 function checkConditions() {
     if (score > randomNumber) {
+        $(".card").attr('class', 'card col-6 col-12-sm animateLoss')
+        $(".card-img-top").attr('src', './assets/images/lossSkull.jpg')
+        $(".you").html("YOU")
+        $('.outcome').html("LOSE")
         losses++
         $("#losses").html(losses)
         arr = []
@@ -53,26 +65,28 @@ function checkConditions() {
                winLReset()
                 boardSetup()
             }
-        }, 500);
+        }, 3000);
     } else if (score === randomNumber) {
         wins++
+        $(".card").attr('class', 'card col-6 col-12-sm animateWin')
         $("#wins").html(wins)
         arr = []
+       
         setTimeout(() => {
-            result = confirm("Heck yeah!  You won!  Try again.")
+            result = confirm("Woohoooo!  You won!  Try again.")
             if (result) {
                 boardSetup() 
             } else {
                 winLReset()
                 boardSetup()
             }
-        }, 500)
+        }, 3000)
    
     } else {
-        setTimeout(() => {
-            setInterval((skull) => {
-                $()
-            })
+        $(thisSkull).attr('class', 'card col-6 col-12-sm clicked')
+        setTimeout((skull) => {            
+            $(thisSkull).attr('class', 'card col-6 col-12-sm')
+            console.log(thisSkull)
         }, 200)
         }
     
@@ -83,18 +97,25 @@ function checkConditions() {
 
 let thisSkull = ""
 // wiring for the buttons
+// to turn the top left skull into a cheater's auto-win button, comment out line 93, and un-comment line94
 $("#aSkull").click(function() {
-    clicker(arr[0])
     thisSkull = "#aSkull"
+    // clicker(arr[0])
+    clicker(randomNumber)
 })
 $("#bSkull").click(function() {
+    thisSkull = "#bSkull"
     clicker(arr[1])
 })
 $("#cSkull").click(function() {
+    thisSkull = "#cSkull"
     clicker(arr[2])
 })
+// to turn bottom right skull into an instant loss button, comment out the clicker(arr[3]) call and un-comment clicker(randomNumber+1)
 $("#dSkull").click(function() {
-    clicker(arr[3])
+    thisSkull = "#dSkull"
+    // clicker(arr[3])
+    clicker(randomNumber + 1)
 })
 
 // user feedback for the score
