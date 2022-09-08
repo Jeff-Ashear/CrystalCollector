@@ -20,6 +20,7 @@ function boardSetup() {
 
     $('.card').attr('class', 'card col-6 col-12-sm')
     $('.card-title').html('')
+    $(".card-img-top").attr('style', 'opacity: 1')
     $('#skull1').attr('src', './assets/images/skull1.jfif')
     $('#skull2').attr('src', './assets/images/skull2.jfif')
     $('#skull3').attr('src', './assets/images/skull3.jfif')
@@ -50,7 +51,8 @@ var result = ""
 function checkConditions() {
     if (score > randomNumber) {
         $(".card").attr('class', 'card col-6 col-12-sm animateLoss')
-        $(".card-img-top").attr('src', './assets/images/lossSkull.jpg')
+        // $(".card-img-top").attr('style', 'opacity: 0.1')
+        $('.card-img-top').attr('src', './assets/images/lossSkull.jpg')
         $(".you").html("YOU")
         $('.outcome').html("LOSE")
         losses++
