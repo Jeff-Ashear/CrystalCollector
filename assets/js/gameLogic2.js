@@ -51,7 +51,6 @@ var result = ""
 function checkConditions() {
     if (score > randomNumber) {
         $(".card").attr('class', 'card col-6 col-12-sm animateLoss')
-        // $(".card-img-top").attr('style', 'opacity: 0.1')
         $('.card-img-top').attr('src', './assets/images/lossSkull.jpg')
         $(".you").html("YOU")
         $('.outcome').html("LOSE")
@@ -102,8 +101,8 @@ let thisSkull = ""
 // to turn the top left skull into a cheater's auto-win button, comment out line 93, and un-comment line94
 $("#aSkull").click(function() {
     thisSkull = "#aSkull"
-    // clicker(arr[0])
-    clicker(randomNumber)
+    clicker(arr[0])
+    // clicker(randomNumber)
 })
 $("#bSkull").click(function() {
     thisSkull = "#bSkull"
@@ -116,8 +115,8 @@ $("#cSkull").click(function() {
 // to turn bottom right skull into an instant loss button, comment out the clicker(arr[3]) call and un-comment clicker(randomNumber+1)
 $("#dSkull").click(function() {
     thisSkull = "#dSkull"
-    // clicker(arr[3])
-    clicker(randomNumber + 1)
+    clicker(arr[3])
+    // clicker(randomNumber + 1)
 })
 
 // user feedback for the score
