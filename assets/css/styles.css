@@ -35,6 +35,16 @@
     border-style: inset;
 }
 
+.cheatCard {
+    max-width: 170px;
+    height: auto;
+    margin: 5px;
+}
+.cheats {
+    padding-bottom: 5vh;
+}
+
+
 #aSkull:hover {
     /* background-color: blanchedalmond; */
     box-shadow: 5px 5px 5px 5px rgb(132, 240, 9);
