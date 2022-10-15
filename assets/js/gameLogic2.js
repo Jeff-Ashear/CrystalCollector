@@ -51,7 +51,8 @@ var result = ""
 function checkConditions() {
     if (score > randomNumber) {
         $(".card").attr('class', 'card col-6 col-12-sm animateLoss')
-        $('.card-img-top').attr('src', './assets/images/lossSkull.jpg')
+        $('.card-img-top').attr('src', './assets/images/lossSkullTop.jpg')
+        $('.card-img-bottom').attr('src', './assets/images/lossSkullBottom.jpg')
         $(".you").html("YOU")
         $('.outcome').html("LOSE")
         losses++
@@ -98,7 +99,7 @@ function checkConditions() {
 
 let thisSkull = ""
 // wiring for the buttons
-// to turn the top left skull into a cheater's auto-win button, comment out line 93, and un-comment line94
+// to turn the top left skull into a cheater's auto-win button, comment out line 105, and un-comment line 106
 $("#aSkull").click(function() {
     thisSkull = "#aSkull"
     clicker(arr[0])
