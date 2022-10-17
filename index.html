@@ -29,8 +29,8 @@
     </nav>
 
     <div class="container interface" id="board">
+        <!-- scoreboard -->
         <div class="interface">
-
             <div class="row" id="scoreboard">
                 <div class="row">
                     <div class="col-4">
@@ -55,6 +55,7 @@
             </div>
         </div>
 
+        <!-- instructions accordion -->
         <div class="row instructions justify-content-center">
             <div class="accordion col-6 col-12-sm" id="accordionFlushExample">
                 <div class="accordion-item">
@@ -77,7 +78,7 @@
             </div>
         </div>
         
-
+        <!-- user controller interface, or if you prefer, clicky pictures -->
         <div class="row interface" id="controlls">
             <div class="row justify-content-center">
                 <div class="card col-6 col-12-sm" id="aSkull" style="width: 18rem;">
@@ -104,6 +105,7 @@
             </div>
         </div>
 
+        <!-- controlls for cheaters and quick efficient gamestate testing -->
         <div class="row cheats justify-content-center">
             <div class="accordion col-6 col-12-sm" id="accordionFlushExample">
                 <div class="accordion-item">
@@ -117,19 +119,21 @@
                         data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body"><strong>Cheating is wrong.</strong>
                             <p>But efficient for testing portfolio demos.</p>
-                            <div class="row">
-                                <div class="cheatCard col-4" id="eSkull" style="width: 18rem;">
-                                    <img src="./assets/images/skull1.jfif" alt="" id="skull5" class="img-fluid winBtn">
-                                    <h4 class="card-title you"></h4>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="cheatCard col-3" id="eSkull" style="width: 18rem;">
+                                        <img src="./assets/images/skull1.jfif" alt="" id="skull5" class="image-fluid cheatBtn winBtn">
+                                        <h4 class="card-title you"></h4>
+                                    </div>
+                                    <div class="cheatCard col-3" id="fSkull" style="width: 18rem;">
+                                        <img src="./assets/images/skull4.jfif" alt="" id="skull5" class="image-fluid cheatBtn lossBtn">
+                                        <h4 class="card-title you"></h4>
+                                    </div>                                
+                                    <div class="cheatCard col-3" id="gSkull" style="width: 18rem;">
+                                        <img src="./assets/images/skull3.jfif" alt="" id="skull5" class="image-fluid cheatBtn peekBtn">
+                                        <h4 class="card-title you"></h4>
+                                    </div>                                
                                 </div>
-                                <div class="cheatCard col-4" id="fSkull" style="width: 18rem;">
-                                    <img src="./assets/images/skull4.jfif" alt="" id="skull5" class="img-fluid lossBtn">
-                                    <h4 class="card-title you"></h4>
-                                </div>                                
-                                <div class="cheatCard col-4" id="gSkull" style="width: 18rem;">
-                                    <img src="./assets/images/skull3.jfif" alt="" id="skull5" class="img-fluid peekBtn">
-                                    <h4 class="card-title you"></h4>
-                                </div>                                
                             </div>
                         </div>
                     </div>

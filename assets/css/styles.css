@@ -36,10 +36,16 @@
 }
 
 .cheatCard {
-    max-width: 170px;
+    max-width: 150px;
     height: auto;
     margin: 5px;
 }
+
+.cheatBtn {
+    max-width: 135px;
+    height: auto;
+}
+
 .cheats {
     padding-bottom: 5vh;
 }
