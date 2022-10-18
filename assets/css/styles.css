@@ -27,12 +27,6 @@
     margin: 5%;
 }
 
-.chtBtns {
-    max-width: 150px;
-    height: auto;
-    margin-bottom: 5px;
-}
-
 .card {
     margin: 2.5%;
     border-width: 5px;
@@ -41,22 +35,6 @@
 .card:click {
     border-style: inset;
 }
-
-.cheatCard {
-    max-width: 150px;
-    height: auto;
-    margin: 5px;
-}
-
-.cheatBtn {
-    max-width: 135px;
-    height: auto;
-}
-
-.cheats {
-    padding-bottom: 5vh;
-}
-
 
 #aSkull:hover {
     /* background-color: blanchedalmond; */
@@ -287,6 +265,8 @@
         color: white}
     100% {background-color: white;
         /* background-image: url("../images/lossSkull2.png"); */
-        color: red;}
-    
+        color: red;}    
 }
+
+
+
