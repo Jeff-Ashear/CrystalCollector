@@ -182,5 +182,6 @@ function clicker(n) {
         chtInterfaceUp = function(key) {
             if (cheatOK === true && key === "cheat") {
                 console.log("time to cheat")
+                $('#chtBtnDiv').attr('style', 'display: static')
             }
         }
