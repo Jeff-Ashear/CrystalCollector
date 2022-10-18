@@ -172,8 +172,15 @@ function clicker(n) {
             if (thisSkull == "#dSkull" && cheatKey === "chea") {
                 cheatKey += "t"
                 $("#controlls").attr("style", "background-color: rgb(6, 177, 245)")
-
+                chtEnabled = true
+                chtInterfaceUp(cheatKey)
             } else {
                 return cheatKey = ""
+            }
+        }
+
+        chtInterfaceUp = function(key) {
+            if (cheatOK === true && key === "cheat") {
+                console.log("time to cheat")
             }
         }
