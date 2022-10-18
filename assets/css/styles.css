@@ -21,6 +21,10 @@
     border-bottom-right-radius: 70px;
 }
 
+/* #cheatInstructions {
+    display: none;
+} */
+
 .interface {
     border: solid black 4px;
     border-radius: 10px;

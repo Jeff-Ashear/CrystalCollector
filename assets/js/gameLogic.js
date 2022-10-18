@@ -103,21 +103,21 @@ let thisSkull = ""
 // to turn the top left skull into a cheater's auto-win button, comment out line 105, and un-comment line 106
 $("#aSkull").click(function() {
     thisSkull = "#aSkull"
-    clicker(arr[0])
+    clicker(arr[0], thisSkull)
     // clicker(randomNumber)
 })
 $("#bSkull").click(function() {
     thisSkull = "#bSkull"
-    clicker(arr[1])
+    clicker(arr[1], thisSkull)
 })
 $("#cSkull").click(function() {
     thisSkull = "#cSkull"
-    clicker(arr[2])
+    clicker(arr[2], thisSkull)
 })
 // to turn bottom right skull into an instant loss button, comment out the clicker(arr[3]) call and un-comment clicker(randomNumber+1)
 $("#dSkull").click(function() {
     thisSkull = "#dSkull"
-    clicker(arr[3])
+    clicker(arr[3], thisSkull)
     // clicker(randomNumber + 1)
 })
 
@@ -127,4 +127,53 @@ function clicker(n) {
     $("#score").html(score)
     checkConditions()
     console.log(n)
+    if (cheatOK === true && chtEnabled === false) {
+        cheatCode(thisSkull)
+        console.log("cheatKey:", cheatKey)
+    }
 }
+
+//cheats logic below
+
+//needs to do the following:
+    //check to see if the toggle is switched on
+    let cheatOK = false
+    let chtEnabled = false
+
+    $('#cheatSwitch').on('change', function() {
+        cheatOK = $(this).is(':checked')
+        console.log(cheatOK)
+        if (cheatOK != false) {
+            $('#cheatInstructions').attr('style', "display: static")
+        } else {
+            $('#cheatInstructions').attr('style', "display: none")
+            $('#controlls').attr('style', 'background-color: rgb(0, 65, 122)')
+        }
+        if (cheatOK == false) {
+            chtEnabled = false
+        }
+        console.log("enabled", chtEnabled)
+    })
+        //check to see if the code pattern is input correctly
+        let cheatKey = ""
+        cheatCode = function(thisSkull) {
+            if (thisSkull == "#aSkull" && cheatKey === "") {
+                return cheatKey += "c"
+            } 
+            if (thisSkull == "#dSkull" && cheatKey === "c") {
+                return cheatKey += "h"
+            } 
+            if (thisSkull == "#dSkull" && cheatKey === "ch") {
+                return cheatKey += "e"
+            }
+            if (thisSkull == "#bSkull" && cheatKey === "che") {
+                return cheatKey += "a"
+            }
+            if (thisSkull == "#dSkull" && cheatKey === "chea") {
+                cheatKey += "t"
+                $("#controlls").attr("style", "background-color: rgb(6, 177, 245)")
+
+            } else {
+                return cheatKey = ""
+            }
+        }
