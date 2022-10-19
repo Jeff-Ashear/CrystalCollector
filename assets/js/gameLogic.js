@@ -146,9 +146,9 @@ function clicker(n) {
         if (cheatOK != false) {
             $('#cheatInstructions').attr('style', "display: static")
             // delete the function call when testing is complete
-            chtInterfaceUp()
+            // chtInterfaceUp()
         } else {
-            $('#cheatInstructions').attr('style', "display: none")
+            $('#cheatBar').attr('style', "display: none")
             $('#controlls').attr('style', 'background-color: rgb(0, 65, 122)')
         }
         if (cheatOK == false) {
@@ -182,8 +182,8 @@ function clicker(n) {
         }
 
         chtInterfaceUp = function(key) {
-            // if (cheatOK === true && key === "cheat") {
-                if (cheatOK === true) {
+            if (cheatOK === true && key === "cheat") {
+                // if (cheatOK === true) {
                 console.log("time to cheat")
                 $('#chtBtnDiv').attr('style', 'display: static')
             }
@@ -197,10 +197,14 @@ function clicker(n) {
         })
 
         $('#winBtn').click(function() {
-            clicker(randomNumber)
+            score = randomNumber
+            $("#score").html(score)
+            checkConditions(score)
         })
         
         $('#lossBtn').click(function() {
-            clicker(randomNumber + 1)
+            score = randomNumber + 1
+            $("#score").html(score)
+            checkConditions(score)
         })
 
