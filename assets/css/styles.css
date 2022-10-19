@@ -1,16 +1,20 @@
-
+nav, footer {
+    margin-left: -15px;
+    margin-right: -15px;
+}
 #board {
     background-color: rgb(222, 191, 145);
 }
 
 #scoreboard {
     padding: 10px;
-    background-color: aliceblue;
+    background-color: rgba(240, 248, 255, 0.713);
+    backdrop-filter: blur(5px);
     border: solid black 4px;
     border-radius: 10px;
     border-top-left-radius: 70px;
     border-top-right-radius: 70px;
-    z-index: 110;
+    z-index: 10;
 }
 
 #controlls {
@@ -20,6 +24,7 @@
     border-radius: 10px;
     border-bottom-left-radius: 70px;
     border-bottom-right-radius: 70px;
+    z-index: -10;
 }
 
 .interface {
@@ -33,6 +38,17 @@
 .card {
     margin: 2.5%;
     border-width: 5px;
+}
+
+footer{
+    font-size: 12pt;
+    color: white;
+    padding: 15px;
+    border-top: solid;
+    border-color: rgb(56, 56, 56);
+    border-width: 2px;
+    background-color: #343a40;
+    width: 100vw;
 }
 
 .card:click {
