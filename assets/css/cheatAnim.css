@@ -1,0 +1,150 @@
+/* all styling and animations for the cheat controls here. */
+
+.cheatCard {
+    max-width: 150px;
+    height: auto;
+    margin: 5px;
+}
+
+.chtCards {
+    margin: 5px;
+}
+
+.chtBanner {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.chtText {
+    justify-content: center;
+}
+
+.chtBtns {
+    /* max-width: 135px; */
+    /* max-width: 150px;
+    height: auto; */
+    margin-bottom: 5px; 
+    border: 5px rgba(235, 162, 45, 0);
+    padding: 0;
+    margin: 5px;
+}
+
+.chtBtns:hover {
+    border: 5px inset burlywood;
+}
+
+#winBtn:hover {
+    animation-name: winHvr;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes winHvr {
+    0% {box-shadow: 30px 30px 100px rgb(26, 255, 0, .2);}
+    2.5% {box-shadow: 30px -30px 100px rgb(26, 255, 0, .2);}
+    5% {box-shadow: -30px -30px 100px rgb(26, 255, 0, .2);}
+    7.5% {box-shadow: -30px 30px 100px rgb(26, 255, 0, .2);}
+    10% {box-shadow: 30px 30px 100px rgb(26, 255, 0, .4);}
+    12.5% {box-shadow: 30px -30px 100px rgb(26, 255, 0, .4);}
+    15% {box-shadow: -30px -30px 100px rgb(26, 255, 0, .4);}
+    17.5% {box-shadow: -30px 30px 100px rgb(26, 255, 0, .4);}
+    20% {box-shadow: 30px 30px 100px rgb(26, 255, 0, .6);}
+    22.5% {box-shadow: 30px -30px 100px rgb(26, 255, 0, .6);}
+    25% {box-shadow: -30px -30px 100px rgb(26, 255, 0, .6);}
+    27.5% {box-shadow: -30px 30px 100px rgb(26, 255, 0, .6);}
+    30% {box-shadow: 30px 30px 100px rgb(26, 255, 0, .8);}
+    32.5% {box-shadow: 30px -30px 100px rgb(26, 255, 0, .8);}
+    35% {box-shadow: -30px -30px 100px rgb(26, 255, 0, .8);}
+    37.5% {box-shadow: -30px 30px 100px rgb(26, 255, 0, .8);}
+    40% {box-shadow: 30px 30px 100px rgb(26, 255, 0, .8);}
+    42.5% {box-shadow: 30px -30px 100px rgb(26, 255, 0);}
+    45% {box-shadow: -30px -30px 100px rgb(26, 255, 0);}
+    47.5% {box-shadow: -30px 30px 100px rgb(26, 255, 0);}
+    50% {box-shadow: 30px 30px 100px rgb(26, 255, 0);}
+    52.5% {box-shadow: 30px -30px 100px rgb(26, 255, 0);}
+    55% {box-shadow: -30px -30px 100px rgb(26, 255, 0);}
+    57.5% {box-shadow: -30px 30px 100px rgb(26, 255, 0);}
+    60% {box-shadow: 30px 30px 100px rgb(26, 255, 0);}
+    62.5% {box-shadow: 30px -30px 100px rgb(26, 255, 0);}
+    65% {box-shadow: -30px -30px 100px rgb(26, 255, 0);}
+    67.5% {box-shadow: -30px 30px 100px rgb(26, 255, 0);}
+    70% {box-shadow: 30px 30px 100px rgb(26, 255, 0, .8);}
+    72.5% {box-shadow: 30px -30px 100px rgb(26, 255, 0, .8);}
+    75% {box-shadow: -30px -30px 100px rgb(26, 255, 0, .8);}
+    77.5% {box-shadow: -30px 30px 100px rgb(26, 255, 0, .8);}
+    80% {box-shadow: 30px 30px 100px rgb(26, 255, 0, .6);}
+    82.5% {box-shadow: 30px -30px 100px rgb(26, 255, 0, .6);}
+    85% {box-shadow: -30px -30px 100px rgb(26, 255, 0, .6);}
+    87.5% {box-shadow: -30px 30px 100px rgb(26, 255, 0, .6);}
+    90% {box-shadow: 30px 30px 100px rgb(26, 255, 0, .4);}
+    92.5% {box-shadow: 30px -30px 100px rgb(26, 255, 0, .4);}
+    95% {box-shadow: -30px -30px 100px rgb(26, 255, 0, .4);}
+    97.5% {box-shadow: -30px 30px 100px rgb(26, 255, 0, .4);}
+    100% {box-shadow: 30px 30px 100px rgb(26, 255, 0, .3);}
+}
+
+#lossBtn:hover {
+    animation-name: lossHvr;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes lossHvr {
+    0% {box-shadow: 40px 40px 300px rgb(255, 0, 0, .2)}
+    2.5% {box-shadow: -40px 40px 300px rgb(255, 0, 0, .2)}
+    5% {box-shadow: -40px -40px 300px rgb(255, 0, 0, .2)}
+    7.5% {box-shadow: 40px -40px 300px rgb(255, 0, 0, .2)}
+    10% {box-shadow: 40px 40px 300px rgb(255, 0, 0, .4)}
+    12.5% {box-shadow: -40px 40px 300px rgb(255, 0, 0, .4)}
+    15% {box-shadow: -40px -40px 300px rgb(255, 0, 0, .4)}
+    17.5% {box-shadow: 40px -40px 300px rgb(255, 0, 0, .4)}
+    20% {box-shadow: -40px 40px 300px rgb(255, 0, 0, .6)}
+    22.5% {box-shadow: -40px -40px 300px rgb(255, 0, 0, .6)}
+    25% {box-shadow: 40px -40px 300px rgb(255, 0, 0, .6)}
+    27.5% {box-shadow: 40px 40px 300px rgb(255, 0, 0, .6)}
+    30% {box-shadow: -40px 40px 300px rgb(255, 0, 0, .8)}
+    32.5% {box-shadow: -40px -40px 300px rgb(255, 0, 0, .8)}
+    35% {box-shadow: 40px -40px 300px rgb(255, 0, 0, .8)}
+    37.5% {box-shadow: -40px 40px 300px rgb(255, 0, 0, .8)}
+    40% {box-shadow: -40px -40px 300px rgb(255, 0, 0)}
+    42.5% {box-shadow: 40px -40px 300px rgb(255, 0, 0)}
+    45% {box-shadow: 40px 40px 300px rgb(255, 0, 0)}
+    47.5% {box-shadow: -40px 40px 300px rgb(255, 0, 0)}
+    50% {box-shadow: -40px -40px 300px rgb(255, 0, 0)}
+    52.5% {box-shadow: 40px -40px 300px rgb(255, 0, 0)}
+    55% {box-shadow: 40px 40px 300px rgb(255, 0, 0)}
+    57.5% {box-shadow: -40px 40px 300px rgb(255, 0, 0)}
+    60% {box-shadow: -40px -40px 300px rgb(255, 0, 0)}
+    62.5% {box-shadow: 40px -40px 300px rgb(255, 0, 0)}
+    65% {box-shadow: 40px 40px 300px rgb(255, 0, 0)}
+    67.5% {box-shadow: -40px 40px 300px rgb(255, 0, 0)}
+    70% {box-shadow: -40px -40px 300px rgb(255, 0, 0)}
+    72.5% {box-shadow: 40px -40px 300px rgb(255, 0, 0, .8)}
+    75% {box-shadow: 40px -40px 300px rgb(255, 0, 0, .8)}
+    77.5% {box-shadow: 40px 40px 300px rgb(255, 0, 0, .8)}
+    80% {box-shadow: -40px 40px 300px rgb(255, 0, 0, .6)}
+    82.5% {box-shadow: -40px -40px 300px rgb(255, 0, 0, .6)}
+    85% {box-shadow: 40px -40px 300px rgb(255, 0, 0, .6)}
+    87.5% {box-shadow: 40px 40px 300px rgb(255, 0, 0, .6)}
+    90% {box-shadow: -40px 40px 300px rgb(255, 0, 0, .4)}
+    92.5% {box-shadow: -40px -40px 300px rgb(255, 0, 0, .4)}
+    95% {box-shadow: 40px -40px 300px rgb(255, 0, 0, .4)}
+    97.5% {box-shadow: 40px 40px 300px rgb(255, 0, 0, .4)}
+    97.5% {box-shadow: 40px 40px 300px rgb(255, 0, 0, .3)}
+    
+}
+
+#peekBtn:hover {
+    animation-name: peekHvr;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes peekHvr {
+    0% {box-shadow: 50px 50px 100px rgb(255, 230, 0)}
+    25% {box-shadow: -50px -50px 700px rgb(255, 230, 0)}
+    50% {box-shadow: 50px -50px 100px rgb(255, 30, 255)}
+    75% {box-shadow: -50px 50px 100px rgb(255, 30, 255)}
+    100% {box-shadow: 50px 50px 100px rgb(255, 230, 0)}
+
+}
