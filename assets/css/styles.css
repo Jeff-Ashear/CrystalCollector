@@ -10,6 +10,7 @@
     border-radius: 10px;
     border-top-left-radius: 70px;
     border-top-right-radius: 70px;
+    z-index: 1100;
 }
 
 #controlls {
@@ -25,6 +26,8 @@
     border: solid black 4px;
     border-radius: 10px;
     margin: 5%;
+    position: sticky;
+    top: 0;
 }
 
 .card {

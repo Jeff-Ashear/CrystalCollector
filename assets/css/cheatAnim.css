@@ -136,12 +136,15 @@
 
 #peekBtn:hover {
     animation-name: peekHvr;
-    animation-duration: 5s;
+    animation-duration: 8s;
     animation-iteration-count: infinite;
 }
 
 @keyframes peekHvr {
     0% {box-shadow: 50px 50px 100px rgb(255, 230, 0)}
-    50% {box-shadow: -50px -50px 700px rgb(255, 230, 0)}
-    100% {box-shadow: 50px 50px 100px rgb(255, 30, 255)}
+    25% {box-shadow: -50px -50px 700px rgb(255, 230, 0)}
+    50% {box-shadow: 50px -50px 100px rgb(255, 30, 255)}
+    75% {box-shadow: -50px 50px 100px rgb(255, 30, 255)}
+    100% {box-shadow: 50px 50px 100px rgb(255, 230, 0)}
+
 }
